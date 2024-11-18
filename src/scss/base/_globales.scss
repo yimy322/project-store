@@ -1,3 +1,4 @@
+@use 'variables' as *;
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -6,18 +7,18 @@ html{
     box-sizing: inherit;
 }
 body{
-    background-color: var(--primario);
+    background-color: $primario;
     font-size: 1.6rem;
     line-height: 1.5;
+    margin: 0;
 }
 p{
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--blanco);
+    color: $blanco;
 }
 a{
     text-decoration: none;
-
 }
 img{
     width: 100%;
@@ -28,11 +29,12 @@ img{
 }
 h1, h2, h3{
     text-align: center;
-    color: var(--secundario);
-    font-family: var(--fuentePrincipal);
+    color: $secundario;
+    font-family: $fuentePrincipal;
 }
 h1{
     font-size: 4rem;
+    font-weight: normal;
 }
 h2{
     font-size: 3.2;

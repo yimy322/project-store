@@ -1,0 +1,26 @@
+@use '../base/variables' as *;
+.header{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    margin: 3rem 0;
+}
+.navegacion{
+    background-color: $primarioOscuro;
+    padding: 1rem o;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    .enlace{
+        font-family: $fuentePrincipal;
+        color: $blanco;
+        font-size: 3rem;
+        &:hover{
+            color: $secundario;
+        }
+    }
+    .activo{
+        color: $secundario;
+    }
+}
